@@ -1,11 +1,39 @@
 <html> 
-  <head>ejercicio 14  </head>
+  <head>ejercicio 14 </head>
+  <!-- Ejercicio 14 – Confeccionar una página en la que se pueda ver un formulario como el siguiente.
+Utilice en combinación con tablas para lograr el efecto deseado.  -->
+
  <body> 
     <br>
+    <title> ALQUILER DE PELICULAS</title> 
     <form>   
-        <p> Ingrese su nombre:  <input type="text" name="nombre" id="nombre">   </p>
+
+        <p> Ingrese su emial:  <input type="text" name="email" id="email">   </p>
+        <p> Ingrese su clave:  <input type="text" name="clave" id="email">   </p>
+        <br>
+        <p>Elija una pelicula para alquilar: </p>
+        <p>(Se puede elegir mas de una de las opciones) </p>
+  <p>
+    Titanic
+      <input type="checkbox" name="checkbox4" value="checkbox">
+  </p>
+  <p>Forest Gamp
+      <input type="checkbox" name="checkbox5" value="checkbox" >
+  </p>
+  <p>El diario de una pasion
+    <input type="checkbox" name="checkbox3" value="checkbox">
+  </p>
+  <p>Llamame por tu nombre
+    <input type="checkbox" name="checkbox2" value="checkbox">
+  </p>
+  <p> Hachiko
+    <input type="checkbox" name="checkbox" value="checkbox">
+  </p>
     <br>
-      
+    <p>
+        <input type="button" value="ENVIAR"  onclick="alert(' Se van a enviar los datos ' );">
+
+    </p>
     </form> 
 </body> 
 </html> 

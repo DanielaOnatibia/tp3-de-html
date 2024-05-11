@@ -1,36 +1,67 @@
 <html> 
-  <head>ejercicio 12  </head>
-  <!--Ejercicio 12 - Confeccione un formulario que permita alquilar una película y solicite el ingreso
-de un mail, una clave y luego muestre una serie de títulos de películas con su respectivo
-checkbox. Disponer también del botón de tipo submit para el envío de datos al servidor.  -->
+  <head>ejercicio 13 </head>
+  <!--Ejercicio 13 - Confeccionar una página para el Sitio de la inmobiliaria realizado en el práctico
+2.
+La página debe contener un formulario en el que se solicita:
+• Nombre (25 caracteres máximo)
+• Apellido (25 caracteres máximo)
+• Dirección (un textarea de 30 caracteres máximo)
+• Teléfono (15 caracteres máximo con un valor inicial 0299)
+• Permitir seleccionar solo una de las siguientes opciones (Alquiler, compra) por defecto
+seleccionado compra
+• Permitir seleccionar una o mas de las siguientes opciones (zona centro, zona norte, zona
+sur), por defecto seleccionada zona centro y zona sur
+• Comentario del inmueble que busca
+• Botón para resetear el formulario
+• Botón para enviar los datos al servidor   -->
 
  <body> 
     <br>
-    <title> ALQUILER DE PELICULAS</title> 
+    <title> INMOVILARIA </title> 
     <form>   
 
-        <p> Ingrese su emial:  <input type="text" name="email" id="email">   </p>
-        <p> Ingrese su clave:  <input type="text" name="clave" id="email">   </p>
+        <p> Ingrese su nombre:  <input type="text" maxlength="25" name="nombre" id="nombre" >   </p>
         <br>
-        <p>Elija una pelicula para alquilar: </p>
-        <p>(Se puede elegir mas de una de las opciones) </p>
-  <p>
-    Titanic
-      <input type="checkbox" name="checkbox4" value="checkbox">
-  </p>
-  <p>Forest Gamp
-      <input type="checkbox" name="checkbox5" value="checkbox" >
-  </p>
-  <p>El diario de una pasion
-    <input type="checkbox" name="checkbox3" value="checkbox">
-  </p>
-  <p>Llamame por tu nombre
-    <input type="checkbox" name="checkbox2" value="checkbox">
-  </p>
-  <p> Hachiko
-    <input type="checkbox" name="checkbox" value="checkbox">
-  </p>
-    <br>
+        <p> Ingrese su apellido:  <input type="text" maxlength="25" name="apellido" id="apellido">   </p>
+        <br>
+        <p> Ingrese su direccion:  <input type="text" maxlength="30" name="direccion" id="direccion" >   </p>
+        <br>
+        <p> Ingrese su telefono:  <input type="text" maxlength="15" value="0299-" name="apellido" id="apellido">   </p>
+        
+        <br>
+        <br>
+
+    <p> ¿Quiere alquilar o comprar?</p>
+          <p>
+            Alquiler
+            <input name="radiobutton" type="radio" value="radiobutton">
+          </p>
+          <p>Compra
+              <input name="radiobutton" checked="checked" type="radio" value="radiobutton">
+        </p>
+
+        <br>
+        <br>
+
+    <p> ¿Que ubicacion prefiere?</p>
+      <p>
+       Zona centro <input type="checkbox" name="radiobutton" checked="checked"  type="radio" value="radiobutton">
+      </p>
+      <p>Zona Norte
+          <input type="checkbox" name="radiobutton" type="radio" value="radiobutton">
+      </p>
+      <p>
+        Zona Sur
+        <input type="checkbox" name="radiobutton"  checked="checked" type="radio" value="radiobutton">
+      </p>
+
+      <br>   
+      <p>Comentenos con mas detalles que tipo de inmueble que busca: </p>
+      <p> <textarea name="comentarios" id="comentarios" rows="10" cols="50"> </textarea> </p>  
+  <br>
+  <br>
+  <p> reiniciar el formulario:  <input type="reset" name="reiniciar" id="reiniciar">   </p>
+  <br>
     <p>
         <input type="button" value="ENVIAR"  onclick="alert(' Se van a enviar los datos ' );">
 
