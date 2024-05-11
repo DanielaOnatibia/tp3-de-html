@@ -4,36 +4,71 @@
 Utilice en combinación con tablas para lograr el efecto deseado.  -->
 
  <body> 
-    <br>
-    <title> ALQUILER DE PELICULAS</title> 
-    <form>   
+ <form>   
+            
 
-        <p> Ingrese su emial:  <input type="text" name="email" id="email">   </p>
-        <p> Ingrese su clave:  <input type="text" name="clave" id="email">   </p>
-        <br>
-        <p>Elija una pelicula para alquilar: </p>
-        <p>(Se puede elegir mas de una de las opciones) </p>
-  <p>
-    Titanic
-      <input type="checkbox" name="checkbox4" value="checkbox">
-  </p>
-  <p>Forest Gamp
-      <input type="checkbox" name="checkbox5" value="checkbox" >
-  </p>
-  <p>El diario de una pasion
-    <input type="checkbox" name="checkbox3" value="checkbox">
-  </p>
-  <p>Llamame por tu nombre
-    <input type="checkbox" name="checkbox2" value="checkbox">
-  </p>
-  <p> Hachiko
-    <input type="checkbox" name="checkbox" value="checkbox">
-  </p>
-    <br>
-    <p>
-        <input type="button" value="ENVIAR"  onclick="alert(' Se van a enviar los datos ' );">
+    <table border="1" align ="center"  >
+           
+     <caption align = "top" > <h2> tabla-formulario </h2> </caption>
+           
+        <tr> 
+           <th > NAME </th> 
+           <th >  VALUE  </th>
+        </tr > 
+        
+        <tr >     
+           <td> Name</td>
+           <td>  <input type="text" name="nombre" id="nombre"> </td>
+        </tr>
+           
+        <tr> 
+            <td> Sex </td>
+            <td> 
+               <p>Femele
+                <input name="radiobutton" type="radio" value="radiobutton"><br>
+                Male
+                <input name="radiobutton" type="radio" value="radiobutton">
+               </p>
+            </td>
+        </tr>
+      
+        <tr >     
+            <td> Eye Color </td>
+            <td>   
+              <select size="1" name="Eye Color ">
+                <option selected="selected"> Green </option>
+                <option >Brown </option>
+                <option>Blue</option>
+              </select>
+            </td>
+         </tr>
+            
+         <tr> 
+           <td> Check all that apply over </td>
+           <td> 
+              <p>over 7 feet tall
+              <input type="checkbox" name="checkbox2" value="checkbox"> <br>
+               over 200 pounds
+              <input type="checkbox" name="checkbox" value="checkbox">
+              </p>
+           </td>
+         </tr>
+            
+         <tr> 
+           <td colspan="2"> <p>Describe your athletic ability: <br>
+            <textarea name="comentarios" id="comentarios" rows="4" cols="50"> </textarea> </p>   </td>
+         </tr>
 
-    </p>
-    </form> 
+         <tr> 
+            <td colspan="2"> <p> 
+                <input type="button" value="Enter my information" style="text-align: center;" onclick="alert(' Se van a enviar los datos ' );">
+            
+            </p></td>
+          </tr>
+     
+    
+    </table>     
+
+ </form> 
 </body> 
 </html> 
